@@ -25,10 +25,13 @@
     "@zendeskgarden/container-utilities": "^0.6.0",
     "@zendeskgarden/react-forms": "^8.42.1",
     "downshift": "^6.0.0",
+    "match-sorter": "4.2.0",
     "polished": "^4.0.0",
     "prop-types": "^15.5.7",
     "react-merge-refs": "^1.1.0",
-    "react-popper": "^1.3.4"
+    "react-popper": "^1.3.4",
+    "react-window": "^1.8.6",
+    "starwars-names": "1.6.0"
   },
   "peerDependencies": {
     "@zendeskgarden/react-theming": "^8.1.0",

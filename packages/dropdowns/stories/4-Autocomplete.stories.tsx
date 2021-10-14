@@ -14,3 +14,4 @@ export default {
 } as Meta;
 
 export { Default } from './examples/Autocomplete/Default';
+export { Virtual } from './examples/Autocomplete/Virtual';

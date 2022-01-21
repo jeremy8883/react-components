@@ -166,14 +166,14 @@ export const Multiselect = React.forwardRef<HTMLDivElement, IMultiselectProps>(
     const { type, ...selectProps } = getToggleButtonProps(
       getRootProps({
         tabIndex: props.disabled ? undefined : -1,
-        onKeyDown: composeEventHandlers((e: React.KeyboardEvent<HTMLElement>) => {
+        onKeyDown: composeEventHandlers(onKeyDown, (e: React.KeyboardEvent<HTMLElement>) => {
           if (isOpen) {
             (e.nativeEvent as any).preventDownshiftDefault = true;
           } else if (!inputValue && e.keyCode === KEY_CODES.HOME) {
             setFocusedItem(selectedItems[0]);
             e.preventDefault();
           }
-        }, onKeyDown),
+        }),
         onFocus: () => {
           setIsFocused(true);
         },

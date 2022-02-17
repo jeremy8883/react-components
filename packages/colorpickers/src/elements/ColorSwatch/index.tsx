@@ -82,12 +82,15 @@ export const ColorSwatch = forwardRef<HTMLTableElement, IColorSwatchProps>(
                   role: undefined
                 });
 
+                console.log(other);
+
                 return (
                   <StyledCell key={value} aria-selected={ariaSelected}>
                     <Tooltip content={label}>
                       <StyledSwatchButton
                         backgroundColor={value}
                         aria-pressed={ariaSelected}
+                        aria-label={label}
                         {...other}
                       >
                         <StyledIcon color={value} selected={ariaSelected}>
